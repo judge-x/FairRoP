@@ -22,7 +22,6 @@ from FL_core.client_selection import *
 from FL_core.federated_algorithm import *
 from utils import utils
 from utils.argparse import get_args
-from checkpoints import *
 
 
 
@@ -57,7 +56,8 @@ def create_model(args):
     elif args.dataset == 'FederatedEMNIST' in args.dataset and args.model == 'CNN':
         model = CNN_EMNIST()
     elif args.dataset == 'FedCIFAR100' and args.model == 'ResNet':
-        model = resnet18(num_classes=args.num_classes, group_norm=args.num_gn)  # ResNet18+GN
+        model = resnet18(num_classes=args.num_classes, group_norm=args.num_gn)
+        # ResNet18+GN
     elif args.dataset == 'CelebA' and args.model == 'CNN':
         model = ModelCNNCeleba()
     elif args.dataset == 'PartitionedCIFAR10':
