@@ -326,7 +326,7 @@ class Server(object):
         df2=pd.DataFrame({'Count':count_selected_num})
         df3=pd.DataFrame({'Rewards':Rewards})
         df=pd.concat([df1,df2,df3],axis=1)
-        df.to_excel(os.path.join(save_path,"result_{}_{}_{}.xlsx".format(self.args.method,self.args.dataset,self.args.posion_rate)),index=False)
+        df.to_excel(os.path.join(save_path,"result_{}_{}_{}_al{}.xlsx".format(self.args.method,self.args.dataset,self.args.posion_rate,self.args.dirichlet_alpha)),index=False)
         return self.agent.model.state_dict()
 
 
