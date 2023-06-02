@@ -20,7 +20,7 @@ python main.py --method {client selection method you want}
  4. ```Cluster1```: Clustered Sampling 1 [[Yann Fraboni et al., 2021](http://proceedings.mlr.press/v139/fraboni21a/fraboni21a.pdf)]
  5. ```Cluster2```: Clustered Sampling 2 [[Yann Fraboni et al., 2021](http://proceedings.mlr.press/v139/fraboni21a/fraboni21a.pdf)]
  6. ```DivFL```: Diverse Client Selection for FL [[Ravikumar Balakrishnan et al., 2022](https://openreview.net/pdf?id=nwKXyFvaUm)]
- 7. ```LTFCS/FairSec```: Ours. The LTFCS is the synonms of FairSec
+ 7. ```LTFCS/FairSec/FairRoP```: Ours. The LTFCS/FairSec is the synonms of FairRoP
 
 ## Benchmark Datasets
 
