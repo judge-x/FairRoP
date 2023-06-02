@@ -1,4 +1,4 @@
-# FairSec:A fairness-enhanced federated client selection scheme  with robust and security guarantee
+# FairRoP:A fairness-enhanced federated client selection scheme  with robust and security guarantee
 
 ## Base Requirements
 ```shell
