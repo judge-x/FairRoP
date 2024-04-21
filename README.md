@@ -1,6 +1,4 @@
-# FairRoP
-FairRoP:A fairness-aware federated client selection scheme with robust guarantee
-
+# FairRoP:A fairness-enhanced federated client selection scheme  with robust and security guarantee
 
 ## Base Requirements
 ```shell
@@ -22,8 +20,8 @@ python main.py --method {client selection method you want}
  4. ```Cluster1```: Clustered Sampling 1 [[Yann Fraboni et al., 2021](http://proceedings.mlr.press/v139/fraboni21a/fraboni21a.pdf)]
  5. ```Cluster2```: Clustered Sampling 2 [[Yann Fraboni et al., 2021](http://proceedings.mlr.press/v139/fraboni21a/fraboni21a.pdf)]
  6. ```DivFL```: Diverse Client Selection for FL [[Ravikumar Balakrishnan et al., 2022](https://openreview.net/pdf?id=nwKXyFvaUm)]
- 7. ```FairRoP```: Ours.
-    
+ 7. ```FairRoP```: Ours. The LTFCS/FairSec is the synonms of FairRoP
+
 ## Benchmark Datasets
 
 1. FederatedEMNIST (default)
@@ -50,10 +48,15 @@ python main.py --method {client selection method you want}
    3.2 Model Poison
 
    
-4. FederatedEMNIST (Posioned with detech)
+4. FederatedE/FMNIST (Posioned with detech)
 
    ```shell
-    python main.py --dataset FederatedEMNIST_Posi --model CNN -A 10 -K 50 --lr_local 0.1 -B 20 -R 100 -eg 0.8 -p 1 -p_rt 0.25 -dete 1 --method LTFCS
+   python main.py --dataset Fed_EMNIST_NIID_POSI --model CNN -A 10 -K 50 --lr_local 0.1 -B 20 -R 100 -eg 0.8 -p 1 -p_rt 0.2 -dete 1
+   -eg 0.5 --method FairRoP -al 0.5
+   ```
+
+   ```shell
+   python main.py --dataset Fed_FMNIST_NIID_POSI --model CNN -A 10 -K 50 --lr_local 0.1 -B 20 -R 100 -p 1 -p_rt 0.2 -dete 1 -eg 0.5 --method FairRoP -al 0.5
    ```
 
 
