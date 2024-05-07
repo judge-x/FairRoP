@@ -1,5 +1,4 @@
-# FairRoP:A fairness-enhanced federated client selection scheme  with robust and security guarantee
-
+# FairRoP: Robust Client Selection Scheme for Fairness-aware Federated Learnin
 ## Base Requirements
 ```shell
 torch=1.8.0
