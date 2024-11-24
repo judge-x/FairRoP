@@ -563,7 +563,6 @@ class Server(object):
         :return:
         '''
         reward_=-0.5*var1-0.5*var2
-        # reward_=(pow(64,0.2*acc-0.8*100*var1))
 
         self.reward=reward_
         return reward_
