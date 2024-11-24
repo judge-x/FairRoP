@@ -562,13 +562,9 @@ class Server(object):
         :param var:
         :return:
         '''
+        reward_=-0.5*var1-0.5*var2
+        # reward_=(pow(64,0.2*acc-0.8*100*var1))
 
-        # self.reward=(pow(64,-var1))
-        # self.reward=-0.5*var1-0.5*var2
-        # reward_=var1*10000
-        reward_=(pow(64,0.2*acc-0.8*100*var1))
-        # reward_=pow(128,0.0*acc+1.0*10*var1)
-        # reward_=(-0.8*100*var1)*100
         self.reward=reward_
         return reward_
 
