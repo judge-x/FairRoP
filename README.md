@@ -93,3 +93,6 @@ python main.py --dataset Fed_CIFAR10_POSI --model CNN -A 10 -K 50 --lr_local 0.1
 # init exploration rate
 '-eg', default= 0.8
 ```
+
+## References
+ - https://github.com/euphoria0-0/Active-Client-Selection-for-Communication-efficient-Federated-Learning
